@@ -1,0 +1,24 @@
+{
+  "name": "local-dev-scratch",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest",
+    "lint:fix": "eslint --cache --fix index.js"
+  },
+  "dependencies": {
+    "jest-diff": "^24.9.0",
+    "lodash": "^4.17.15"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": "nth"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-config-nth": "^2.0.1",
+    "jest": "^24.9.0"
+  }
+}
