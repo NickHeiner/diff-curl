@@ -29,5 +29,8 @@ yargs.command('$0 fileA fileB', 'Compare two CURL requests', () => {}, async arg
 
   // This console statement is intentional.
   // eslint-disable-next-line no-console
-  console.log(jestDiff(parsedA, parsedB));
+  console.log(jestDiff(parsedA, parsedB, {
+    aAnnotation: argv.fileA,
+    bAnnotation: argv.fileB
+  }));
 }).argv;
