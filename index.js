@@ -15,7 +15,13 @@ const parseCurl = fileContents => {
     .omitBy(val => val === null || typeof val === 'function')
     .value();
 
-  const parsedFlags = _.omit(yargs.parse(flags), '_', '$0');
+  const parsedFlags = _(yargs.parse(flags))
+    .omit('_', '$0');
+
+  // Netflix-specific knowledge.
+  if (parsedUrl.query.truths) {
+    parsedUrl.query.truths = parsedUrl.query.truths.split('-');
+  }
 
   return {
     url: parsedUrl,

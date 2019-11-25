@@ -1,6 +1,9 @@
 {
-  "name": "local-dev-scratch",
+  "name": "diff-curl",
   "version": "1.0.0",
+  "bin": {
+    "diff-curl": "./index.js"
+  },
   "scripts": {
     "test": "jest",
     "lint:fix": "eslint --cache --fix index.js"
