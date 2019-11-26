@@ -5,6 +5,7 @@
     "diff-curl": "./index.js"
   },
   "scripts": {
+    "demo": "./index.js test/issues.bash test/pulls.bash",
     "test": "yarn run lint --max-warnings 0",
     "lint": "eslint --cache --fix index.js",
     "lint:fix": "yarn lint --fix"
