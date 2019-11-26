@@ -1,6 +1,6 @@
 {
   "name": "diff-curl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "bin": {
     "diff-curl": "./index.js"
   },
@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "jest-diff": "^24.9.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "yargs": "^15.0.2"
   },
   "eslintConfig": {
     "env": {
@@ -26,7 +27,6 @@
   },
   "devDependencies": {
     "eslint": "^6.7.1",
-    "eslint-config-nth": "^2.0.1",
-    "jest": "^24.9.0"
+    "eslint-config-nth": "^2.0.1"
   }
 }
