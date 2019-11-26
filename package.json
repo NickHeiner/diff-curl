@@ -1,12 +1,17 @@
 {
   "name": "diff-curl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "diff-curl": "./index.js"
   },
   "scripts": {
-    "test": "jest",
-    "lint:fix": "eslint --cache --fix index.js"
+    "test": "yarn run lint --max-warnings 0",
+    "lint": "eslint --cache --fix index.js",
+    "lint:fix": "yarn lint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NickHeiner/diff-curl.git"
   },
   "dependencies": {
     "jest-diff": "^24.9.0",
